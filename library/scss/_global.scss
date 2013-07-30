@@ -18,3 +18,88 @@ body{
 a{
 	color: $link-color;
 }
+img{
+	max-width: 100%;
+}
+h1 {
+    font-size: 2em;
+    padding: 0.67em 0;
+    margin:0;
+    font-family: Serif;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+header{
+	background-color: $global-head-bg;
+	color: $light;
+}
+nav{
+	background: $global-head-bg;
+}
+nav ul{
+	padding: 2% 4%;
+}
+nav a{
+	padding: 10px 0;
+	display: block;
+	color: $light;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+nav a:hover,
+nav a:focus{
+	text-decoration: underline;
+}
+article h1{
+	text-align: center;
+	color: $global-header;
+}
+
+
+
+.skip,
+.navigate-now {
+    display: block;
+    color: $light;
+    padding:2% 4%;
+    font-size: 14px;
+    background-color: $global-head-bg;
+    text-decoration: none;
+}
+.skip:hover,
+.skip:focus,
+.navigate-now:hover,
+.navigate-now:focus{
+	text-decoration: underline;
+}
+.higher-than-the-sky .go-home{
+	display: block;
+	text-align: center;
+}
+.published{
+	text-align: center;
+	padding-bottom: 4%;
+}
+

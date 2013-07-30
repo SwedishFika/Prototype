@@ -24,6 +24,32 @@ body {
 	color: #565656;
 }
 
+
+
+
+.skip {
+    font-size: 16px;
+    text-align: center;
+    height: 25px;
+    padding: 15px 0;
+    color: #000;
+    background: #03aaf6;
+    position: absolute;
+    top: -70px;
+    z-index: 10;
+    width: 100%;
+    -webkit-transition: top .2s linear;
+    -moz-transition: top .2s linear;
+    transition: top .2s linear;
+}
+
+.skip:focus {
+    top: 0;
+    outline: 0;
+    z-index: 101;
+}
+
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
