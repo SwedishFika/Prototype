@@ -718,7 +718,9 @@ and will be used across all viewports.
     background: url(../images/background/wallpaper.jpg) repeat center 0; }
 
   body {
-    position: relative; }
+    position: relative;
+    font-family: "Berthold Akzidenz Grotesk", Helvetica, sans-serif;
+    font-weight: lighter; }
 
   /*@group Top Header */
   .higher-than-the-sky {
