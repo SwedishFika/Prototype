@@ -751,7 +751,15 @@ and will be used across all viewports.
 
   /*@end Top Header */
   article h1 {
-    font-family: "Jubilar", Georgia, serif; }
+    font-family: "Jubilat", Georgia, serif;
+    font-size: 36px;
+    line-height: 34px;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+    /* TODO: include this in the biggest media-query
+    @include fontsize(4.15, 3.8);*/
+    max-width: 860px;
+    margin: 0 auto; }
 
   .text-left {
     text-align: left; }

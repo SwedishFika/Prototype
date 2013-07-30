@@ -53,7 +53,12 @@ and will be used across all viewports.
 	}
 	/*@end Top Header */
 	article h1{
-		font-family: 'Jubilar', Georgia, serif;
+		font-family: 'Jubilat', Georgia, serif;
+		@include fontsize(1.8, 1.7);
+		/* TODO: include this in the biggest media-query
+		@include fontsize(4.15, 3.8);*/
+		max-width: 860px;
+		margin: 0 auto;
 	}
 	.text-left   { text-align: left; }
 	.text-center { text-align: center; }
