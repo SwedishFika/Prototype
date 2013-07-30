@@ -714,8 +714,10 @@ and will be used across all viewports.
 ******************************************************************/
 @media screen {
   /*@group Framework*/
+  html {
+    background: url(../images/background/wallpaper.jpg) repeat center 0; }
+
   body {
-    background: url(../images/background/wallpaper.jpg) no-repeat center 0;
     position: relative; }
 
   /*@group Top Header */
@@ -748,6 +750,9 @@ and will be used across all viewports.
     z-index: 101; }
 
   /*@end Top Header */
+  article h1 {
+    font-family: "Jubilar", Georgia, serif; }
+
   .text-left {
     text-align: left; }
 
