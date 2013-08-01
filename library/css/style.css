@@ -84,12 +84,6 @@ select,
 textarea {
   font-family: sans-serif; }
 
-/**
- * Address margins handled incorrectly in IE 6/7.
- */
-body {
-  margin: 0; }
-
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -105,39 +99,6 @@ a:focus {
 a:active,
 a:hover {
   outline: 0; }
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address font sizes and margins set differently in IE 6/7.
- * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
- * and Chrome.
- */
-h1 {
-  font-size: 2em;
-  padding: 0.67em 0;
-  margin: 0; }
-
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0; }
-
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0; }
-
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0; }
-
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0; }
-
-h6 {
-  font-size: 0.67em;
-  margin: 2.33em 0; }
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -176,13 +137,6 @@ hr {
 mark {
   background: #ff0;
   color: #000; }
-
-/**
- * Address margins set differently in IE 6/7.
- */
-p,
-pre {
-  margin: 1em 0; }
 
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
@@ -596,7 +550,8 @@ a {
   color: #80c8ce; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  padding: 1em 0; }
 
 h1 {
   font-size: 2em;
@@ -624,6 +579,10 @@ h6 {
   font-size: 0.67em;
   margin: 2.33em 0; }
 
+p,
+pre {
+  margin: 0 0 1em 0; }
+
 header {
   background-color: #474039;
   color: white; }
@@ -632,7 +591,8 @@ nav {
   background: #474039; }
 
 nav ul {
-  padding: 2% 4%; }
+  padding: 2% 4%;
+  margin: 0; }
 
 nav a {
   padding: 10px 0;
@@ -719,7 +679,7 @@ and will be used across all viewports.
 
   body {
     position: relative;
-    font-family: "Berthold Akzidenz Grotesk", Helvetica, sans-serif;
+    font-family: "nimbus-sans", Helvetica, sans-serif;
     font-weight: lighter; }
 
   /*@group Top Header */
@@ -761,7 +721,8 @@ and will be used across all viewports.
     /* TODO: include this in the biggest media-query
     @include fontsize(4.15, 3.8);*/
     max-width: 860px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    letter-spacing: 1px; }
 
   .text-left {
     text-align: left; }

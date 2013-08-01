@@ -19,7 +19,7 @@ and will be used across all viewports.
 	}
 	body {
 		position: relative;
-		font-family: 'Berthold Akzidenz Grotesk', Helvetica, sans-serif;
+		font-family: "nimbus-sans", Helvetica, sans-serif;
 		font-weight: lighter;
 	}
 
@@ -61,6 +61,7 @@ and will be used across all viewports.
 		@include fontsize(4.15, 3.8);*/
 		max-width: 860px;
 		margin: 0 auto;
+		letter-spacing: 1px;
 	}
 	.text-left   { text-align: left; }
 	.text-center { text-align: center; }

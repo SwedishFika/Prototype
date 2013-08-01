@@ -27,6 +27,7 @@ a{
 }
 img{
 	max-width: 100%;
+	padding: 1em 0;
 }
 h1 {
     font-size: 2em;
@@ -58,6 +59,10 @@ h6 {
     font-size: 0.67em;
     margin: 2.33em 0;
 }
+p,
+pre {
+    margin: 0 0 1em 0;
+}
 header{
 	background-color: $global-head-bg;
 	color: $light;
@@ -67,6 +72,7 @@ nav{
 }
 nav ul{
 	padding: 2% 4%;
+	margin: 0
 }
 nav a{
 	padding: 10px 0;
