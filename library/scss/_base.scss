@@ -69,12 +69,64 @@ and will be used across all viewports.
 	/*@end Framework*/
 
 	/*@group Article*/
-
-
+	/*@group Artcle Content*/
+	.entry-content{
+		padding: 0 calc-percent(40, 800);
+		/*padding: calc-percent(31, 1280);*/
+	}
+	.published{
+		text-align: center;
+		padding-bottom: 4%;
+		@include fontsize(0.75, 1.4);
+	}
+	.preamble{
+		color: $contrast;
+		font-weight: bold;
+		@include fontsize(1.2, 1.5);
+	}
+	/*@end Artcle Content*/
+	/*@group Author*/
+	.author-stuff{
+		overflow: hidden;
+		padding: 3% 0;
+	}
+	.author-stuff h2{
+		@include fontsize(0.9, 1);	
+	}
+	.author-stuff p{
+		@include fontsize(0.7, 0.8);
+	}
+	.author-stuff a{
+		text-decoration: none;
+	}
+	.author-stuff a:hover,
+	.author-stuff a:focus{
+		text-decoration: underline;
+	}
+	.author-stuff img{
+		/*border-radius: 100%;
+		float: left;
+		display: block;
+		padding: 0;
+		margin: 0 calc-percent(40, 800) 0 0;*/
+	}
+	/*@end Author*/
+	/*@group Comment Shortcut*/
+	.comment-shortcut{
+		text-decoration: none;
+	}
+	.comment-shortcut:hover,
+	.comment-shortcut:focus{
+		text-decoration: underline;
+	}
+	/*@end Comment Shortcut*/
 	/*@group Comment*/
 	.comment-form{
 		border-top: 4px solid #e8e8e8;
-		padding: 3% 0 0 0;
+		padding: 3% calc-percent(40, 800) 0 calc-percent(40, 800);
+	}
+	.comment-form legend{
+		padding: 0 0 calc-percent(15, 800);
 	}
 	/*@end Comment*/
 	/*@end Article*/

@@ -266,8 +266,8 @@ form {
  */
 fieldset {
   border: none;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  margin: 0;
+  padding: 0; }
 
 /**
  * 1. Correct color not being inherited in IE 6/7/8/9.
@@ -535,11 +535,11 @@ After this one we progressively enhance up til the most sophisticated machine.
 
 ******************************************************************/
 html, body {
-  background-color: #fafafa;
   color: #666565; }
 
 html {
   border-top: 4px solid black;
+  background-color: #fafafa;
   font-size: 125%; }
 
 body {
@@ -586,9 +586,9 @@ pre {
 legend {
   font-family: "Jubilat", Georgia, serif;
   font-size: 24px;
-  line-height: 20px;
+  line-height: 28px;
   font-size: 1.2rem;
-  line-height: 1rem; }
+  line-height: 1.4rem; }
 
 label,
 input,
@@ -606,14 +606,14 @@ textarea {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 0 1% 0;
+  margin: 0 0 2.16667%;
   border: 1px solid #e1e1e1;
   border-radius: 3px;
   padding: 5px; }
 
 label {
   font-weight: bold;
-  margin: 0 0 0.8% 0; }
+  margin: 0 0 1.66667%; }
 
 header {
   background-color: #474039;
@@ -641,6 +641,9 @@ nav a:hover,
 nav a:focus {
   text-decoration: underline; }
 
+aside {
+  padding: 5%; }
+
 article h1 {
   text-align: center;
   color: #fffcde; }
@@ -666,24 +669,6 @@ article h1 {
 .go-home {
   display: block;
   text-align: center; }
-
-.entry-content {
-  padding: 2.42188%; }
-
-.published {
-  text-align: center;
-  padding-bottom: 4%;
-  font-size: 15px;
-  line-height: 28px;
-  font-size: 0.75rem;
-  line-height: 1.4rem; }
-
-.preamble {
-  color: #80c8ce;
-  font-size: 24px;
-  line-height: 30px;
-  font-size: 1.2rem;
-  line-height: 1.5rem; }
 
 /*
 BASE (MOBILE) SIZE
@@ -767,10 +752,76 @@ and will be used across all viewports.
 
   /*@end Framework*/
   /*@group Article*/
+  /*@group Artcle Content*/
+  .entry-content {
+    padding: 0 5%;
+    /*padding: calc-percent(31, 1280);*/ }
+
+  .published {
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 15px;
+    line-height: 28px;
+    font-size: 0.75rem;
+    line-height: 1.4rem; }
+
+  .preamble {
+    color: #80c8ce;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 1.5rem; }
+
+  /*@end Artcle Content*/
+  /*@group Author*/
+  .author-stuff {
+    overflow: hidden;
+    padding: 3% 0; }
+
+  .author-stuff h2 {
+    font-size: 18px;
+    line-height: 20px;
+    font-size: 0.9rem;
+    line-height: 1rem; }
+
+  .author-stuff p {
+    font-size: 14px;
+    line-height: 16px;
+    font-size: 0.7rem;
+    line-height: 0.8rem; }
+
+  .author-stuff a {
+    text-decoration: none; }
+
+  .author-stuff a:hover,
+  .author-stuff a:focus {
+    text-decoration: underline; }
+
+  .author-stuff img {
+    /*border-radius: 100%;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0 calc-percent(40, 800) 0 0;*/ }
+
+  /*@end Author*/
+  /*@group Comment Shortcut*/
+  .comment-shortcut {
+    text-decoration: none; }
+
+  .comment-shortcut:hover,
+  .comment-shortcut:focus {
+    text-decoration: underline; }
+
+  /*@end Comment Shortcut*/
   /*@group Comment*/
   .comment-form {
     border-top: 4px solid #e8e8e8;
-    padding: 3% 0 0 0; }
+    padding: 3% 5% 0 5%; }
+
+  .comment-form legend {
+    padding: 0 0 1.875%; }
 
   /*@end Comment*/
   /*@end Article*/ }
