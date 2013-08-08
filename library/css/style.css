@@ -265,7 +265,7 @@ form {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: none;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -583,6 +583,38 @@ p,
 pre {
   margin: 0 0 1em 0; }
 
+legend {
+  font-family: "Jubilat", Georgia, serif;
+  font-size: 24px;
+  line-height: 20px;
+  font-size: 1.2rem;
+  line-height: 1rem; }
+
+label,
+input,
+textarea {
+  display: block;
+  font-size: 18px;
+  line-height: 16px;
+  font-size: 0.9rem;
+  line-height: 0.8rem; }
+
+input,
+textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0 1% 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  padding: 5px; }
+
+label {
+  font-weight: bold;
+  margin: 0 0 0.8% 0; }
+
 header {
   background-color: #474039;
   color: white; }
@@ -733,7 +765,15 @@ and will be used across all viewports.
   .text-right {
     text-align: right; }
 
-  /*@end Framework*/ }
+  /*@end Framework*/
+  /*@group Article*/
+  /*@group Comment*/
+  .comment-form {
+    border-top: 4px solid #e8e8e8;
+    padding: 3% 0 0 0; }
+
+  /*@end Comment*/
+  /*@end Article*/ }
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

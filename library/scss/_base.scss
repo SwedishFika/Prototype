@@ -67,4 +67,16 @@ and will be used across all viewports.
 	.text-center { text-align: center; }
 	.text-right  { text-align: right; }
 	/*@end Framework*/
+
+	/*@group Article*/
+
+
+	/*@group Comment*/
+	.comment-form{
+		border-top: 4px solid #e8e8e8;
+		padding: 3% 0 0 0;
+	}
+	/*@end Comment*/
+	/*@end Article*/
+
 }

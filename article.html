@@ -48,6 +48,32 @@
                 message that says whether or not I successfully got unsubscribed.
             </p>
         </div>
+        <form action="http://ida/SwedishFika/wordpress/wp-comments-post.php" method="post" class="comment-form">
+        <fieldset id="respond" class="respond-form">
+            <legend>Leave a comment</legend>
+                <p>
+                    Remember to be nice! Spam and irrelevant comments will be deleted.
+                    Also, we won’t post any e-mails so don’t worry. We hate spam too!
+                </p>
+                <div>
+                  <label for="author">Name (required)</label>
+                  <input type="text" name="author" id="author" value="" tabindex="1" aria-required="true">
+                </div>
+                <div>
+                  <label for="email">Mail (required)</label>
+                  <input type="email" name="email" id="email" value="" tabindex="2" aria-required="true">
+                </div>
+                <div>
+                  <label for="url">Website</label>
+                  <input type="url" name="url" id="url" value="" tabindex="3">
+                </div>
+                <div>
+                    <label for="comment">Your comment</label>
+                    <textarea name="comment" id="comment" tabindex="4"></textarea>
+                </div>
+              <button name="submit" type="submit">Comment now</button>
+            </fieldset>
+        </form>
     </article>
     <aside>
         <h2><a href="">Simon Kjellberg</a></h2>
