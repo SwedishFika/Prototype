@@ -82,6 +82,9 @@ textarea{
 	border-radius: 3px;
 	padding: 5px;
 }
+textarea{
+	resize:none;
+}
 label{
 	font-weight: bold;
 	margin:0 0 calc-percent(10, 600); 
