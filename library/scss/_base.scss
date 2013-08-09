@@ -70,6 +70,10 @@ and will be used across all viewports.
 
 	/*@group Article*/
 	/*@group Artcle Content*/
+	.headline{
+		background-color: $global-head-bg;
+		color: $light;
+	}
 	.entry-content{
 		padding: 0 calc-percent(40, 800);
 		/*padding: calc-percent(31, 1280);*/
@@ -83,6 +87,11 @@ and will be used across all viewports.
 		color: $contrast;
 		font-weight: bold;
 		@include fontsize(1.2, 1.5);
+	}
+	.avatar{
+		border-radius: 100%;
+		margin: 0;
+		padding: 0;
 	}
 	/*@end Artcle Content*/
 	/*@group Author*/
@@ -103,11 +112,6 @@ and will be used across all viewports.
 	.author-stuff a:focus{
 		text-decoration: underline;
 	}
-	.author-stuff img{
-		border-radius: 100%;
-		margin:0;
-		padding:0;
-	}
 	/*@end Author*/
 	/*@group Comment Shortcut*/
 	.comment-shortcut{
@@ -118,7 +122,7 @@ and will be used across all viewports.
 		text-decoration: underline;
 	}
 	/*@end Comment Shortcut*/
-	/*@group Comment*/
+	/*@group Comment Form*/
 	.comment-form{
 		border-top: 4px solid #e8e8e8;
 		padding: 3% calc-percent(40, 800) 0 calc-percent(40, 800);
@@ -126,7 +130,18 @@ and will be used across all viewports.
 	.comment-form legend{
 		padding: 0 0 calc-percent(15, 800);
 	}
-	/*@end Comment*/
+	/*@end Comment Form*/
+	/*@group Comments*/
+	.commentlist li{
+		position: relative;
+		padding-left: 80px;
+	}
+	.commentlist .avatar{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	/*@end Comments*/
 	/*@end Article*/
 
 }

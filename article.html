@@ -26,7 +26,7 @@
 </header>
 <main id="main" role="main">
     <article>
-        <header>
+        <header class="headline">
             <h1>Are email subscriptions really necessary?</h1>
             <p class="published">Posted <time>15 april, 2013</time></p>
         </header>
@@ -48,6 +48,18 @@
                 message that says whether or not I successfully got unsubscribed.
             </p>
         </div>
+        <aside>
+            <section class="author-stuff">
+                <img src="library/images/test/author.jpg" alt="Simons vackra bild" class="avatar">
+                <div class="author-text">
+                    <h2><a href="">Simon Kjellberg</a></h2>
+                    <p>
+                        Text om Simon här. Typ några korta meningar. Inte mer än så.
+                    </p>
+                </div>
+            </section>
+            <a href="" class="comment-shortcut">10 comments</a>
+        </aside>
         <form action="http://ida/SwedishFika/wordpress/wp-comments-post.php" method="post" class="comment-form">
         <fieldset id="respond" class="respond-form">
             <legend>Leave a comment</legend>
@@ -66,17 +78,25 @@
               <button name="submit" type="submit">Comment now</button>
             </fieldset>
         </form>
+        <ol class="commentlist">
+            <li class="comment even thread-even depth-1">
+                <article id="comment-1">
+                    <div class="comment-author">
+                        <!-- custom gravatar call -->
+                        <img data-gravatar="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=65" class="avatar" height="65" width="65" src="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=65">
+                        <!-- end custom gravatar call -->
+                        <a href="http://wordpress.org/" rel="external nofollow" class="url">Mr WordPress</a>              <time datetime="2013-05-12"><a href="http://ida/SwedishFika/wordpress/?p=1#comment-1">May 12th, 2013 9:04 pm </a></time>
+                          <a class="comment-edit-link" href="http://ida/SwedishFika/wordpress/wp-admin/comment.php?action=editcomment&amp;c=1" title="Edit comment">(Edit)</a>          
+                      </div>
+                                <div class="comment-content">
+                        <p>Hi, this is a comment.<br>
+        To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.</p>
+                    </div>
+                    <a class="comment-reply-link" href="/SwedishFika/wordpress/?p=1&amp;replytocom=1#respond" onclick="return addComment.moveForm(&quot;comment-1&quot;, &quot;1&quot;, &quot;respond&quot;, &quot;1&quot;)">Reply</a>      </article>
+            <!-- </li> is added by WordPress automatically -->
+        </li><!-- #comment-## -->
+            </ol>
     </article>
-    <aside>
-        <section class="author-stuff">
-            <h2><a href="">Simon Kjellberg</a></h2>
-            <img src="library/images/test/author.jpg" alt="Simons vackra bild">
-            <p>
-                Text om Simon här. Typ några korta meningar. Inte mer än så.
-            </p>
-        </section>
-        <a href="" class="comment-shortcut">10 comments</a>
-    </aside>
 </main>
 <footer>
     <nav role="navigation" id="navigate">

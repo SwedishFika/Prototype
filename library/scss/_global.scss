@@ -89,10 +89,6 @@ label{
 	font-weight: bold;
 	margin:0 0 calc-percent(10, 600); 
 }
-header{
-	background-color: $global-head-bg;
-	color: $light;
-}
 nav{
 	background: $global-head-bg;
 }
@@ -113,7 +109,7 @@ nav a:focus{
 	text-decoration: underline;
 }
 aside{
-	padding: calc-percent(40, 800);
+	padding: 0 calc-percent(40, 800) calc-percent(40, 800) calc-percent(40, 800);
 }
 article h1{
 	text-align: center;
@@ -138,5 +134,9 @@ article h1{
 .go-home{
 	display: block;
 	text-align: center;
+}
+.higher-than-the-sky{
+	background-color: $global-head-bg;
+	color: $light;
 }
 
