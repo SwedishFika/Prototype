@@ -130,16 +130,51 @@ and will be used across all viewports.
 	.comment-form legend{
 		padding: 0 0 calc-percent(15, 800);
 	}
+	.comment-form input,
+	.comment-form textarea{
+		-webkit-appearance: none;
+	}
 	/*@end Comment Form*/
 	/*@group Comments*/
+	.commentlist{
+		padding: 0 calc-percent(40, 800);
+	}
 	.commentlist li{
 		position: relative;
 		padding-left: 80px;
+		list-style: none;
+	}
+	.commentlist a{
+		text-decoration: none;
+	}
+	.commentlist a:hover,
+	.commentlist a:focus{
+		text-decoration: underline;
 	}
 	.commentlist .avatar{
 		position: absolute;
 		left: 0;
 		top: 0;
+	}
+	.comment-author{
+		display: block;
+	}
+	.comment-author,
+	.comment-author a{
+		color:#666565;
+		font-weight: bold;
+		@include fontsize(0.8, 0.9);
+	}
+	.comment-content{
+		padding: calc-percent(20, 800) 0;
+	}
+	.commentlist time a,
+	.comment-edit-link,
+	.comment-reply-link{
+		@include fontsize(0.6, 0.7);
+	}
+	.comment-reply-link{
+		font-weight: bold;
 	}
 	/*@end Comments*/
 	/*@end Article*/

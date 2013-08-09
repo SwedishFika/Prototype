@@ -828,16 +828,57 @@ and will be used across all viewports.
   .comment-form legend {
     padding: 0 0 1.875%; }
 
+  .comment-form input,
+  .comment-form textarea {
+    -webkit-appearance: none; }
+
   /*@end Comment Form*/
   /*@group Comments*/
+  .commentlist {
+    padding: 0 5%; }
+
   .commentlist li {
     position: relative;
-    padding-left: 80px; }
+    padding-left: 80px;
+    list-style: none; }
+
+  .commentlist a {
+    text-decoration: none; }
+
+  .commentlist a:hover,
+  .commentlist a:focus {
+    text-decoration: underline; }
 
   .commentlist .avatar {
     position: absolute;
     left: 0;
     top: 0; }
+
+  .comment-author {
+    display: block; }
+
+  .comment-author,
+  .comment-author a {
+    color: #666565;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    font-size: 0.8rem;
+    line-height: 0.9rem; }
+
+  .comment-content {
+    padding: 2.5% 0; }
+
+  .commentlist time a,
+  .comment-edit-link,
+  .comment-reply-link {
+    font-size: 12px;
+    line-height: 14px;
+    font-size: 0.6rem;
+    line-height: 0.7rem; }
+
+  .comment-reply-link {
+    font-weight: bold; }
 
   /*@end Comments*/
   /*@end Article*/ }
