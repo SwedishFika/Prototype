@@ -61,40 +61,42 @@
             </section>
             <a href="" class="comment-shortcut">10 comments</a>
         </aside>
-       <form action="http://ida/SwedishFika/wordpress/wp-comments-post.php" method="post" class="comment-form">
-        <fieldset id="respond" class="respond-form">
-            <legend>Leave a comment</legend>
-                <p>
-                    Remember to be nice! Spam and irrelevant comments will be deleted.
-                    Also, we won’t post any e-mails so don’t worry. We hate spam too!
-                </p>
-                <label for="author">Name (required)</label>
-                <input type="text" name="author" id="author" value="" aria-required="true">
-                <label for="email">Mail (required)</label>
-                <input type="email" name="email" id="email" value="" aria-required="true">
-                <label for="url">Website</label>
-                <input type="url" name="url" id="url" value="">
-                <label for="comment">Your comment</label>
-                <textarea name="comment" id="comment" rows="10"></textarea>
-              <button name="submit" type="submit">Comment now</button>
-            </fieldset>
-        </form>
-        <ol class="commentlist">
-            <li class="comment even thread-even depth-1">
-                <article id="comment-1">
-                        <img data-gravatar="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=65" class="avatar" height="65" width="65" src="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=65">
-                        <span class="comment-author">
-                            <a href="http://wordpress.org/" rel="external nofollow" class="url">Mr WordPress</a>
-                        </span>
-                                    <time datetime="2013-05-12"><a href="http://ida/SwedishFika/wordpress/?p=1#comment-1">May 12th, 2013 9:04 pm </a></time>
-                          <a class="comment-edit-link" href="http://ida/SwedishFika/wordpress/wp-admin/comment.php?action=editcomment&amp;c=1" title="Edit comment">(Edit)</a>          
-                                <div class="comment-content">
-                        <p>Hi, this is a comment.<br>
-        To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.</p>
-                    </div>
-                    <a class="comment-reply-link" href="/SwedishFika/wordpress/?p=1&amp;replytocom=1#respond" onclick="return addComment.moveForm(&quot;comment-1&quot;, &quot;1&quot;, &quot;respond&quot;, &quot;1&quot;)">Reply</a>      </article>
-        </li>
+        <div class="feedback">
+            <ol class="commentlist">
+                <li class="comment even thread-even depth-1">
+                    <article id="comment-1">
+                            <img data-gravatar="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=65" class="avatar" height="65" width="65" src="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=65">
+                            <span class="comment-author">
+                                <a href="http://wordpress.org/" rel="external nofollow" class="url">Mr WordPress</a>
+                            </span>
+                                        <time datetime="2013-05-12"><a href="http://ida/SwedishFika/wordpress/?p=1#comment-1">May 12th, 2013 9:04 pm </a></time>
+                              <a class="comment-edit-link" href="http://ida/SwedishFika/wordpress/wp-admin/comment.php?action=editcomment&amp;c=1" title="Edit comment">(Edit)</a>          
+                                    <div class="comment-content">
+                            <p>Hi, this is a comment.<br>
+            To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.</p>
+                        </div>
+                        <a class="comment-reply-link" href="/SwedishFika/wordpress/?p=1&amp;replytocom=1#respond" onclick="return addComment.moveForm(&quot;comment-1&quot;, &quot;1&quot;, &quot;respond&quot;, &quot;1&quot;)">Reply</a>      </article>
+                </li>
             </ol>
+           <form action="http://ida/SwedishFika/wordpress/wp-comments-post.php" method="post" class="comment-form">
+            <fieldset id="respond" class="respond-form">
+                <legend>Leave a comment</legend>
+                    <p>
+                        Remember to be nice! Spam and irrelevant comments will be deleted.
+                        Also, we won’t post any e-mails so don’t worry. We hate spam too!
+                    </p>
+                    <label for="author">Name (required)</label>
+                    <input type="text" name="author" id="author" value="" aria-required="true">
+                    <label for="email">Mail (required)</label>
+                    <input type="email" name="email" id="email" value="" aria-required="true">
+                    <label for="url">Website</label>
+                    <input type="url" name="url" id="url" value="">
+                    <label for="comment">Your comment</label>
+                    <textarea name="comment" id="comment" rows="10"></textarea>
+                  <button name="submit" type="submit">Comment now</button>
+                </fieldset>
+            </form>
+        </div>
     </article>
 </main>
 <footer>

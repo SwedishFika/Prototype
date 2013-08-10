@@ -827,7 +827,7 @@ and will be used across all viewports.
   /*@group Comment Form*/
   .comment-form {
     border-top: 4px solid #e8e8e8;
-    padding: 3% 5% 0 5%; }
+    padding: 3% 5% 5%; }
 
   .comment-form legend {
     padding: 0 0 1.875%; }
@@ -839,7 +839,7 @@ and will be used across all viewports.
   /*@end Comment Form*/
   /*@group Comments*/
   .commentlist {
-    padding: 0 5%; }
+    padding: 0 5% 5%; }
 
   .commentlist li {
     position: relative;
@@ -871,7 +871,7 @@ and will be used across all viewports.
     line-height: 0.9rem; }
 
   .comment-content {
-    padding: 2.5% 0; }
+    padding: 0.78125% 0 0; }
 
   .commentlist time a,
   .comment-edit-link,
@@ -916,6 +916,31 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
+@media only screen and (min-width: 680px) {
+  /******************************************************************
+  
+  Site Name: Swedish Fika
+  Author: Johan, Ida, Simon and Alex
+  
+  Stylesheet: Tablet & Small Desktop Stylesheet
+  
+  Here's where you can start getting into the good stuff.
+  This size will work on iPads, other tablets, and desktops.
+  So you can start working with more styles, background images,
+  and other resources. You'll also notice the grid starts to
+  come into play. Have fun!
+  
+  ******************************************************************/
+  /*@group Framework*/
+  article h1 {
+    /*@include fontsize(4.15, 3.8);*/ }
+
+  /*@end Framework*/
+  /*@group Comments*/
+  .comment-author {
+    display: inline; }
+
+  /*@end Comments*/ }
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -948,6 +973,9 @@ you can add resource intensive styles.
     margin: 0;
     padding-top: 30px; }
 
+  aside {
+    padding-left: 0; }
+
   /*@group Navigation*/
   nav {
     position: absolute;
@@ -964,6 +992,18 @@ you can add resource intensive styles.
   /*@end Navigation*/
   /*@end Framework*/
   /*@group Article*/
+  .entry-content,
+  .feedback {
+    float: right;
+    border-left: 1px solid #e8e8e8; }
+
+  .entry-content {
+    width: 73.35938%; }
+
+  .feedback {
+    width: 83.35938%;
+    clear: right; }
+
   /*@end Article*/ }
 /*
 LARGE VIEWING SIZE

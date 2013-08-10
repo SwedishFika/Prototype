@@ -125,7 +125,7 @@ and will be used across all viewports.
 	/*@group Comment Form*/
 	.comment-form{
 		border-top: 4px solid #e8e8e8;
-		padding: 3% calc-percent(40, 800) 0 calc-percent(40, 800);
+		padding: 3% calc-percent(40, 800) calc-percent(40, 800);
 	}
 	.comment-form legend{
 		padding: 0 0 calc-percent(15, 800);
@@ -137,7 +137,7 @@ and will be used across all viewports.
 	/*@end Comment Form*/
 	/*@group Comments*/
 	.commentlist{
-		padding: 0 calc-percent(40, 800);
+		padding: 0 calc-percent(40, 800) calc-percent(40, 800);
 	}
 	.commentlist li{
 		position: relative;
@@ -166,7 +166,7 @@ and will be used across all viewports.
 		@include fontsize(0.8, 0.9);
 	}
 	.comment-content{
-		padding: calc-percent(20, 800) 0;
+		padding: calc-percent(10, 1280) 0 0;
 	}
 	.commentlist time a,
 	.comment-edit-link,

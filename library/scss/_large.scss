@@ -21,6 +21,9 @@ article h1{
 	margin: 0;
 	padding-top: 30px;
 }
+aside{
+	padding-left: 0
+}
 /*@group Navigation*/
 nav{
 	position: absolute;
@@ -37,7 +40,16 @@ nav li{
 /*@end Navigation*/
 /*@end Framework*/
 /*@group Article*/
+.entry-content,
+.feedback{
+	float: right;
+	border-left: 1px solid #e8e8e8
+}
 .entry-content{
-	
+	width: calc-percent(939, 1280);
+}
+.feedback{
+	width: calc-percent(1067, 1280);
+	clear:right;
 }
 /*@end Article*/
