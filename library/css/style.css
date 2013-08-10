@@ -1007,14 +1007,36 @@ you can add resource intensive styles.
     border-left: 1px solid #e8e8e8; }
 
   .entry-content {
-    width: 71.17188%; }
+    width: 61.17188%; }
 
   .feedback {
-    width: 81.17188%;
+    width: 71.17188%;
     clear: right; }
 
   .author-stuff {
-    background: #fff; }
+    background: #fff;
+    padding: 3.90625% 0 3.90625% 3.67188%;
+    display: table;
+    border-bottom: 1px solid gainsboro; }
+
+  .author-stuff .avatar {
+    display: table-cell;
+    vertical-align: middle;
+    width: 101px; }
+
+  .author-text {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 11.76471% 0 5.29412%; }
+
+  .author-text p,
+  .author-text h2 {
+    margin: 0; }
+
+  .comment-shortcut {
+    display: block;
+    padding: 4.6875% 2.73438% 4.29688% 7.26563%;
+    border-bottom: 1px solid gainsboro; }
 
   /*@end Article*/ }
 /*
