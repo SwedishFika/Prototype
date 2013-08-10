@@ -40,16 +40,23 @@ nav li{
 /*@end Navigation*/
 /*@end Framework*/
 /*@group Article*/
+.preamble{
+	@include fontsize(2.1, 2.7);
+	font-weight: normal;
+}
 .entry-content,
 .feedback{
 	float: right;
 	border-left: 1px solid #e8e8e8
 }
 .entry-content{
-	width: calc-percent(939, 1280);
+	width: calc-percent(911, 1280);
 }
 .feedback{
-	width: calc-percent(1067, 1280);
+	width: calc-percent(1039, 1280);
 	clear:right;
+}
+.author-stuff{
+	background: #fff;
 }
 /*@end Article*/

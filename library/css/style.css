@@ -774,7 +774,8 @@ and will be used across all viewports.
     font-size: 15px;
     line-height: 28px;
     font-size: 0.75rem;
-    line-height: 1.4rem; }
+    line-height: 1.4rem;
+    margin: 0; }
 
   .preamble {
     color: #80c8ce;
@@ -782,7 +783,8 @@ and will be used across all viewports.
     font-size: 24px;
     line-height: 30px;
     font-size: 1.2rem;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    padding-top: 6.25%; }
 
   .avatar {
     border-radius: 100%;
@@ -992,17 +994,27 @@ you can add resource intensive styles.
   /*@end Navigation*/
   /*@end Framework*/
   /*@group Article*/
+  .preamble {
+    font-size: 42px;
+    line-height: 54px;
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+    font-weight: normal; }
+
   .entry-content,
   .feedback {
     float: right;
     border-left: 1px solid #e8e8e8; }
 
   .entry-content {
-    width: 73.35938%; }
+    width: 71.17188%; }
 
   .feedback {
-    width: 83.35938%;
+    width: 81.17188%;
     clear: right; }
+
+  .author-stuff {
+    background: #fff; }
 
   /*@end Article*/ }
 /*
