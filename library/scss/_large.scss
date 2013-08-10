@@ -1,0 +1,43 @@
+/******************************************************************
+
+Site Name: Swedish Fika
+Author: Johan, Ida, Simon and Alex
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+
+/*@group Framework*/
+article h1{
+	@include fontsize(4.15, 3.8);
+}
+.go-home{
+	display: inline;
+}
+.go-home img{
+	margin: 0;
+	padding-top: 30px;
+}
+/*@group Navigation*/
+nav{
+	position: absolute;
+	top: 88px;
+	right: 30px;
+}
+nav li{
+	float: left;
+	margin-left: 20px;
+}
+.navigate-now{
+	display: none;
+}
+/*@end Navigation*/
+/*@end Framework*/
+/*@group Article*/
+.entry-content{
+	
+}
+/*@end Article*/
