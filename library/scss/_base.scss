@@ -61,6 +61,7 @@ and will be used across all viewports.
 		@include fontsize(4.15, 3.8);*/
 		max-width: 860px;
 		margin: 0 auto;
+		padding: 0 4% calc-percent(30, 1280);
 		letter-spacing: 1px;
 	}
 	.text-left   { text-align: left; }
@@ -86,7 +87,6 @@ and will be used across all viewports.
 	}
 	.preamble{
 		color: $contrast;
-		font-weight: bold;
 		@include fontsize(1.2, 1.5);
 		padding-top: calc-percent(80, 1280);
 	}

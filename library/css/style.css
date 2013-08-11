@@ -746,6 +746,7 @@ and will be used across all viewports.
     @include fontsize(4.15, 3.8);*/
     max-width: 860px;
     margin: 0 auto;
+    padding: 0 4% 2.34375%;
     letter-spacing: 1px; }
 
   .text-left {
@@ -779,7 +780,6 @@ and will be used across all viewports.
 
   .preamble {
     color: #80c8ce;
-    font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     font-size: 1.2rem;
@@ -976,7 +976,8 @@ you can add resource intensive styles.
     padding-top: 30px; }
 
   aside {
-    padding-left: 0; }
+    padding: 0;
+    width: 28.90625%; }
 
   /*@group Navigation*/
   nav {
@@ -1015,14 +1016,14 @@ you can add resource intensive styles.
 
   .author-stuff {
     background: #fff;
-    padding: 3.90625% 0 3.90625% 3.67188%;
+    padding: 14.70588% 0 14.70588% 13.82353%;
     display: table;
     border-bottom: 1px solid gainsboro; }
 
   .author-stuff .avatar {
     display: table-cell;
     vertical-align: middle;
-    width: 101px; }
+    max-width: none; }
 
   .author-text {
     display: table-cell;
@@ -1033,9 +1034,12 @@ you can add resource intensive styles.
   .author-text h2 {
     margin: 0; }
 
+  .author-text h2 {
+    padding-bottom: 1.47059%; }
+
   .comment-shortcut {
     display: block;
-    padding: 4.6875% 2.73438% 4.29688% 7.26563%;
+    padding: 17.64706% 10.29412% 16.17647% 27.35294%;
     border-bottom: 1px solid gainsboro; }
 
   /*@end Article*/ }
